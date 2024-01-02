@@ -1,0 +1,361 @@
+*{
+    padding: 0;
+    margin: 0;
+   /* font-family: sans-serif; */
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+.banner {
+    
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/hero1.png);
+    background-size: cover;
+    background-position: center;
+}
+.navebar{
+    width: 75%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.tab-nav {
+  background:#404F6C;
+}
+.tab-titles {
+  display: flex;
+  
+}
+
+
+.nav{
+  width: 75%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav ul li a {
+  color: #404F6C;
+}
+.bg-tab-links {
+  background:#6B7C98;
+  color: #404F6C !important;
+}
+
+.tab-links {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 1000;
+  color: #a1acc2;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #404F6C;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  transition: 0.5s;
+}
+
+
+
+.tab-links.active-link::after {
+  width: 80%;
+  margin-left: 10px;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  margin-top: 100px;
+  display: block;
+}
+
+.tab-contents .box-content {
+  margin-left: 20px;
+  background: white;
+  width: 300px;
+  padding: 20px;
+}
+.tab-contents .box-content .box-text {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.logo {
+/*   cursor: pointer; */
+/*   background-color: #FFEA11; */
+
+}
+
+ ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px; 
+   /*padding: 0 20px; */
+    position: relative; 
+
+}
+
+ ul li a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: white;
+    text-transform: capitalize;
+}
+
+
+
+.content {
+    width: 75%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.content .content-text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.content .text-div {
+    display: flex;
+    position: relative;
+    height: 220px;
+    width: 270px;
+}
+.square {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    bottom: 0;
+    right: 0;
+    background-color: #6B7C98;
+}
+.content .text-div .text-number {
+    position: absolute;
+    font-size: 200px;
+}
+
+.content .text-div h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #6B7C98;
+    position: absolute;
+    bottom: -45px;
+    
+}
+
+ h4 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #3C4C6D;
+}
+.content .text-div h4 {
+    font-size: 35px;
+    position: absolute;
+    font-weight: bold;
+    right: -60px;
+    bottom: 50px;
+}
+.content p {
+    font-weight: 100;
+    line-height: 25px;
+    font-family: 'sans-serif';
+    color: #3C4C6D;
+}
+.footer {
+  background: #404F6C;
+}
+
+.footer .content-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .content-footer p {
+  color: #6B7C98;
+}
+.footer .img-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+}
+.footer h5 {
+  color: #6B7C98;
+  line-height: 18px;
+  font-size: 18px;
+}
+.section-two {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/section.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.section-fourth {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/bg_last.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+button {
+    
+    width: 150px;
+    height: 40px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color:  #FFEA11;
+    cursor: pointer;
+    position:relative;
+    overflow: hidden;
+    
+}
+
+span {
+    text-align: center;
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+button:hover span {
+    width: 100%;
+}
+button:hover {
+    border: none;
+}
+
+.section-slider {
+    background:  #35445B;
+    opacity: 0.9;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.wrapper{
+    display: flex;
+    max-width: 75%;
+    position: relative;
+  }
+  .wrapper i{
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    color: #343F4F;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.9);
+  }
+  .wrapper i:hover{
+    background: #f2f2f2;
+  }
+  .wrapper i:first-child{
+    left: -22px;
+    display: none;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+  }
+  .carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging img{
+    pointer-events: none;
+  }
+  .carousel img{
+    height: 180px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 4);
+  }
+  .carousel img:first-child{
+    margin-left: 0px;
+  }
+  @media screen and (max-width: 900px) {
+    .carousel img{
+      width: calc(100% / 2);
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .carousel img{
+      width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+  .content .content-text {
+    display: block;
+  }
+ 
+  .tab-contents .box-content {
+    margin: 0px;
+    width: 250px;
+  }
+  .tab-contents.active-tab {
+    margin-top: 10px;
+  }
+  .section-fourth {
+    
+  }
+}
+
+
+
